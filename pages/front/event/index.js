@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../components/header";
 import { useState } from "react";
+import styles from "./Event.module.css";
 
 export default function resource() {
   const [id, setId] = useState(null);
@@ -63,7 +64,7 @@ export default function resource() {
     <div>
       <Header />
       <h1>{id ? "Editar Recurso" : "Cadastrar Novo Recurso"}</h1>
-      <form onSubmit={handleSubmit}>
+      <form className={styles.form} onSubmit={handleSubmit}>
         <spam>Título:</spam>
         <input
           type="text"
