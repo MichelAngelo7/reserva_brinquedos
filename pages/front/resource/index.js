@@ -1,5 +1,5 @@
 import { Container } from "../styles/GlobalStyles";
-import { Title, Form } from "../home/styled";
+import { Title, Form } from "./styled";
 import Header from "../components/header";
 import { useState } from "react";
 
@@ -10,7 +10,7 @@ export default function resource() {
   async function handleSubmit(e) {
     e.preventDefault();
     console.log(name);
-    const response = await fetch("http://localhost:3000/api/v1/event", {
+    const response = await fetch("http://localhost:3000/api/v1/resource", {
       method: "POST",
       body: JSON.stringify({
         name: name,
