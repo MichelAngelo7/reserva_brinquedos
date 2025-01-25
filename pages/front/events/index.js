@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../components/header";
 import { useEffect, useState } from "react";
+import styles from "./Events.module.css";
 
 export default function events() {
   const [events, setEvents] = useState([]);
@@ -18,7 +19,7 @@ export default function events() {
     <div>
       <Header />
       <h1>Eventos</h1>
-      <table>
+      <table className={styles.table}>
         <thead>
           <tr>
             <th>ID</th>
