@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../components/header";
 import { useEffect, useState } from "react";
+import styles from "./Resources.module.css";
 
 export default function resource() {
   const [resources, setResources] = useState([]);
@@ -18,7 +19,7 @@ export default function resource() {
     <div>
       <Header />
       <h1>Recursos</h1>
-      <table>
+      <table className={styles.table}>
         <thead>
           <tr>
             <th>ID</th>
