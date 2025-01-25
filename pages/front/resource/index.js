@@ -1,5 +1,3 @@
-import { Container } from "../styles/GlobalStyles";
-import { Title, Form } from "./styled";
 import Header from "../components/header";
 import { useState } from "react";
 
@@ -28,10 +26,10 @@ export default function resource() {
   }
 
   return (
-    <Container>
+    <div>
       <Header />
-      <Title>{id ? "Editar Evento" : "Cadastrar Evento"}</Title>
-      <Form onSubmit={handleSubmit}>
+      <h1>{id ? "Editar Evento" : "Cadastrar Evento"}</h1>
+      <form onSubmit={handleSubmit}>
         <spam>Nome:</spam>
         <input
           type="text"
@@ -40,7 +38,7 @@ export default function resource() {
           placeholder="nome"
         />
         <button type="subimit">Enviar</button>
-      </Form>
-    </Container>
+      </form>
+    </div>
   );
 }

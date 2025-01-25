@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { Container } from "../styles/GlobalStyles";
 import Header from "../components/header";
 
 export default function status() {
@@ -18,7 +17,7 @@ export default function status() {
   }, []);
 
   return (
-    <Container>
+    <div>
       <Header />
       <h1>Status Page</h1>
       <spam>Atualizado em: {new Date(response.updated_at).toDateString()}</spam>
@@ -31,6 +30,6 @@ export default function status() {
       <div>
         <spam>Conexões abertas: {database.opened_connections}</spam>
       </div>
-    </Container>
+    </div>
   );
 }

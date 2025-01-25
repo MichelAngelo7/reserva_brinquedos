@@ -1,15 +1,10 @@
 import React from "react";
-import home from "./front/home";
-import { Container } from "./front/styles/GlobalStyles";
 import Header from "./front/components/header";
 
-function Home() {
+export default function Home() {
   return (
-    <Container>
+    <div>
       <Header />
-      <home />
-    </Container>
+    </div>
   );
 }
-
-export default Home;
