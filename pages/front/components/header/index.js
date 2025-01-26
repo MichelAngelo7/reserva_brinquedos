@@ -14,10 +14,10 @@ export default function Header() {
         Cad. Evento
       </a>
       <a className={styles.a} href="/front/resources">
-        Exibir Recursos
+        Exibir Brinquedos
       </a>
       <a className={styles.a} href="/front/resource">
-        Cad. Recursos
+        Cad. brinquedo
       </a>
       <a className={styles.a} href="/front/status">
         Status

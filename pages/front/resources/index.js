@@ -18,7 +18,7 @@ export default function resource() {
   return (
     <div>
       <Header />
-      <h1>Recursos</h1>
+      <h1>Brinquedos:</h1>
       <table className={styles.table}>
         <thead>
           <tr>
