@@ -8,7 +8,7 @@ export default function resource() {
 
   useEffect(() => {
     async function getAllResourse() {
-      const response = await fetch("http://localhost:3000/api/v1/resource");
+      const response = await fetch("/api/v1/resource");
       const responsebody = await response.json();
       setResources(responsebody.rows);
     }

@@ -33,7 +33,7 @@ export default function resource() {
       information,
     );
 
-    const response = await fetch("http://localhost:3000/api/v1/event", {
+    const response = await fetch("/api/v1/event", {
       method: "POST",
       body: JSON.stringify({
         id,

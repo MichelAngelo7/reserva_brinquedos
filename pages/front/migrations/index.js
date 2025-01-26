@@ -10,7 +10,7 @@ export default function resource() {
   async function handleSubmit(e) {
     e.preventDefault();
     console.log(name);
-    const response = await fetch("http://localhost:3000/api/v1/migrations", {
+    const response = await fetch("/api/v1/migrations", {
       method: "POST",
       body: JSON.stringify({}),
       headers: {
