@@ -8,7 +8,7 @@ export default function events() {
 
   useEffect(() => {
     async function getAllEvents() {
-      const response = await fetch("http://localhost:3000/api/v1/event");
+      const response = await fetch("/api/v1/event");
       const responsebody = await response.json();
       setEvents(responsebody.rows);
     }

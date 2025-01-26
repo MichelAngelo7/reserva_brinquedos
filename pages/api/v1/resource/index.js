@@ -35,6 +35,7 @@ async function getAllResourse(request, response) {
 
 async function addResource(requestBody, response) {
   const event = requestBody;
+  console.log(event.name);
 
   try {
     const result = await database.query({
