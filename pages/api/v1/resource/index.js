@@ -24,7 +24,7 @@ async function resource(request, response) {
 async function getAllResourse(request, response) {
   try {
     const result = await database.query({
-      text: "SELECT * FROM resource",
+      text: "SELECT * FROM resource;",
     });
 
     response.status(200).json(result);

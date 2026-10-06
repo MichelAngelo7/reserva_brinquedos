@@ -33,7 +33,6 @@ export default function resource() {
               <td>{resource.name}</td>
             </tr>
           ))}
-          <tr></tr>
         </tbody>
       </table>
     </div>
